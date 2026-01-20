@@ -1,16 +1,19 @@
 /* CSS Variables & Reset */
 :root {
-    --primary-color: #0A192F;
-    /* Deep Navy Blue */
-    --secondary-color: #172A45;
-    /* Lighter Navy */
-    --accent-color: #D4AF37;
-    /* Gold */
-    --accent-light: #F3DC87;
-    /* Light Gold */
-    --text-color: #333333;
-    --text-light: #8892b0;
-    --bg-light: #F8F9FA;
+    --primary-color: #2563EB;
+    /* Blue */
+    --secondary-color: #1E293B;
+    /* Dark Slate */
+    --accent-color: #06B6D4;
+    /* Teal */
+    --accent-light: #67E8F9;
+    /* Light Cyan */
+    --text-color: #334155;
+    /* Slate Grey */
+    --text-light: #64748B;
+    /* Light Slate Grey */
+    --bg-light: #F1F5F9;
+    /* Very Light Slate */
     --white: #ffffff;
 
     --font-heading: 'Playfair Display', serif;
@@ -191,9 +194,12 @@ img {
     color: var(--white);
 }
 
-.logo-icon {
-    font-size: 2rem;
-    color: var(--accent-color);
+.logo img {
+    background-color: var(--white);
+    padding: 5px 10px;
+    border-radius: 4px;
+    height: 45px;
+    width: auto;
 }
 
 .logo-text h1 {
@@ -276,7 +282,7 @@ img {
 .hero {
     height: 100vh;
     min-height: 500px;
-    background: radial-gradient(circle at center, #172A45 0%, #0A192F 100%);
+    background: radial-gradient(circle at center, var(--secondary-color) 0%, var(--primary-color) 100%);
     position: relative;
     display: flex;
     align-items: center;
@@ -294,8 +300,8 @@ img {
     width: 100%;
     height: 100%;
     background-image:
-        linear-gradient(rgba(212, 175, 55, 0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(212, 175, 55, 0.05) 1px, transparent 1px);
+        linear-gradient(rgba(6, 182, 212, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(6, 182, 212, 0.05) 1px, transparent 1px);
     background-size: 50px 50px;
     opacity: 0.5;
     z-index: 0;
@@ -307,7 +313,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.6));
+    background: linear-gradient(rgba(30, 41, 59, 0.9), rgba(30, 41, 59, 0.7));
     z-index: 1;
 }
 
@@ -479,7 +485,7 @@ img {
 .icon-box {
     width: 60px;
     height: 60px;
-    background-color: rgba(212, 175, 55, 0.15);
+    background-color: rgba(6, 182, 212, 0.15);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -668,7 +674,7 @@ img {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--accent-color);
-    box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+    box-shadow: 0 0 0 2px rgba(6, 182, 212, 0.2);
 }
 
 .full-width {
@@ -773,6 +779,10 @@ footer {
 
 /* Responsive */
 @media (max-width: 960px) {
+    .section {
+        padding: 60px 0;
+    }
+
     .nav-links {
         display: none;
         /* Mobile Menu handled by JS */
@@ -787,6 +797,10 @@ footer {
     .contact-wrapper,
     .footer-container {
         grid-template-columns: 1fr;
+    }
+
+    .contact-wrapper {
+        gap: 30px;
     }
 
     .hero h2 {
@@ -807,25 +821,68 @@ footer {
         background-color: var(--primary-color);
         padding: 20px;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-links.active li {
+        width: 100%;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .nav-links.active li:last-child {
+        border-bottom: none;
+    }
+
+    .btn-nav {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
     }
 }
 
 @media (max-width: 600px) {
+    .section {
+        padding: 40px 0;
+    }
+
     .hero h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .stat-item h2 {
+        font-size: 2.5rem;
+    }
+
+    .service-card {
+        padding: 25px 20px;
     }
 
     .hero-btns {
         flex-direction: column;
+        gap: 15px;
     }
 
     .btn {
         width: 100%;
         text-align: center;
+        padding: 12px 20px;
+    }
+
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        bottom: 20px;
+        right: 20px;
     }
 }
 

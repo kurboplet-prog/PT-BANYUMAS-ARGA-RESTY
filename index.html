@@ -26,11 +26,7 @@
     <nav class="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">
-                <span class="logo-icon"><i class="fa-solid fa-building-columns"></i></span>
-                <div class="logo-text">
-                    <h1>PT Banyumas Arga Resty</h1>
-                    <p>General Trading & Services</p>
-                </div>
+                <img src="assets/PT BARESTY LOGO.png" alt="PT Banyumas Arga Resty Logo" style="height: 50px;">
             </a>
             <button class="mobile-menu-btn" aria-label="Toggle menu">
                 <span class="bar"></span>
@@ -38,11 +34,12 @@
                 <span class="bar"></span>
             </button>
             <ul class="nav-links">
-                <li><a href="#home">Beranda</a></li>
-                <li><a href="#about">Tentang Kami</a></li>
-                <li><a href="#services">Layanan</a></li>
-                <li><a href="#advantages">Keunggulan</a></li>
-                <li><a href="#contact" class="btn-nav">Hubungi Kami</a></li>
+                <li><a href="#home" data-i18n="nav.home">Beranda</a></li>
+                <li><a href="#about" data-i18n="nav.about">Tentang Kami</a></li>
+                <li><a href="#services" data-i18n="nav.services">Layanan</a></li>
+                <li><a href="#advantages" data-i18n="nav.advantages">Keunggulan</a></li>
+                <li><a href="#contact" class="btn-nav" data-i18n="nav.contact">Hubungi Kami</a></li>
+                <li><button id="lang-toggle" class="lang-btn">EN</button></li>
             </ul>
         </div>
     </nav>
@@ -51,13 +48,16 @@
     <section id="home" class="hero">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
-            <h2 class="animate-up">Mitra Terpercaya dalam<br> <span class="text-gold">Perdagangan & Jasa Global</span>
+            <h2 class="animate-up" data-i18n="hero.title">Mitra Terpercaya dalam<br> <span
+                    class="text-gradient-animated">Perdagangan
+                    & Jasa Global</span>
             </h2>
-            <p class="animate-up delay-1">Melayani dengan profesionalisme tinggi dan pengalaman lebih dari 20 tahun
+            <p class="animate-up delay-1" data-i18n="hero.desc">Melayani dengan profesionalisme tinggi dan pengalaman
+                lebih dari 20 tahun
                 dalam solusi pengadaan dan distribusi yang andal.</p>
             <div class="hero-btns animate-up delay-2">
-                <a href="#about" class="btn btn-primary">Pelajari Lebih Lanjut</a>
-                <a href="#contact" class="btn btn-outline">Konsultasi Sekarang</a>
+                <a href="#about" class="btn btn-primary" data-i18n="hero.cta_primary">Pelajari Lebih Lanjut</a>
+                <a href="#contact" class="btn btn-outline" data-i18n="hero.cta_secondary">Konsultasi Sekarang</a>
             </div>
         </div>
     </section>
@@ -72,15 +72,19 @@
                 </div>
                 <div class="exp-badge">
                     <span class="years">20+</span>
-                    <span class="text">Tahun<br>Pengalaman</span>
+                    <span class="text" data-i18n="about.exp">Tahun<br>Pengalaman</span>
                 </div>
             </div>
             <div class="about-text reveal-right">
-                <h4 class="section-subtitle">Tentang Perusahaan</h4>
-                <h2 class="section-title">Dedikasi untuk Kualitas & Kepercayaan</h2>
-                <p>PT Banyumas Arga Resty adalah perusahaan perdagangan umum barang dan jasa yang telah beroperasi lebih
-                    dari 20 tahun dan terdaftar secara resmi sebagai perseroan terbatas di Indonesia.</p>
-                <p>Kami berkomitmen melayani dengan profesional, mengutamakan kepercayaan, ketepatan waktu, serta
+                <h4 class="section-subtitle" data-i18n="about.subtitle">Tentang Perusahaan</h4>
+                <h2 class="section-title" data-i18n="about.title">Dedikasi untuk Kualitas & Kepercayaan</h2>
+                <p data-i18n="about.p1">PT Banyumas Arga Resty adalah perusahaan perdagangan umum barang dan jasa yang
+                    telah beroperasi lebih
+                    dari <span class="highlight-text">20 tahun</span> dan terdaftar secara resmi sebagai perseroan
+                    terbatas di Indonesia.</p>
+                <p data-i18n="about.p2">Kami berkomitmen melayani dengan <span
+                        class="highlight-text">profesional</span>, mengutamakan kepercayaan,
+                    ketepatan waktu, serta
                     hubungan jangka panjang dengan mitra dan pelanggan. Dengan jaringan yang luas dan pemahaman kuat
                     terhadap kebutuhan pasar, kami siap menjadi partner strategis bisnis Anda.</p>
 
@@ -88,29 +92,31 @@
                     <div class="value-item">
                         <i class="fa-solid fa-handshake"></i>
                         <div>
-                            <h5>Profesional</h5>
-                            <p>Standar kerja tinggi</p>
+                            <div>
+                                <h5 data-i18n="about.val1_title">Profesional</h5>
+                                <p data-i18n="about.val1_desc">Standar kerja tinggi</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="value-item">
-                        <i class="fa-solid fa-clock"></i>
-                        <div>
-                            <h5>Tepat Waktu</h5>
-                            <p>Disiplin & Efisien</p>
+                        <div class="value-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <div>
+                                <h5 data-i18n="about.val2_title">Tepat Waktu</h5>
+                                <p data-i18n="about.val2_desc">Disiplin & Efisien</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="section services">
         <div class="container">
             <div class="section-header text-center reveal-up">
-                <h4 class="section-subtitle">Layanan Kami</h4>
-                <h2 class="section-title">Solusi Bisnis Komprehensif</h2>
-                <p>Kami menyediakan berbagai solusi pengadaan dan distribusi untuk mendukung operasional bisnis Anda.
+                <h4 class="section-subtitle" data-i18n="services.subtitle">Layanan Kami</h4>
+                <h2 class="section-title" data-i18n="services.title">Solusi Bisnis Komprehensif</h2>
+                <p data-i18n="services.desc">Kami menyediakan berbagai solusi pengadaan dan distribusi untuk mendukung
+                    operasional bisnis Anda.
                 </p>
             </div>
 
@@ -120,8 +126,9 @@
                     <div class="icon-box">
                         <i class="fa-solid fa-truck-fast"></i>
                     </div>
-                    <h3>Perdagangan Umum</h3>
-                    <p>Penyediaan berbagai macam barang kebutuhan industri dan komersial dengan kualitas terbaik dan
+                    <h3 data-i18n="services.s1_title">Perdagangan Umum</h3>
+                    <p data-i18n="services.s1_desc">Penyediaan berbagai macam barang kebutuhan industri dan komersial
+                        dengan kualitas terbaik dan
                         harga kompetitif.</p>
                 </div>
 
@@ -130,8 +137,9 @@
                     <div class="icon-box">
                         <i class="fa-solid fa-clipboard-check"></i>
                     </div>
-                    <h3>Jasa Pengadaan</h3>
-                    <p>Layanan procurement end-to-end yang efisien untuk memastikan ketersediaan material dan peralatan
+                    <h3 data-i18n="services.s2_title">Jasa Pengadaan</h3>
+                    <p data-i18n="services.s2_desc">Layanan procurement end-to-end yang efisien untuk memastikan
+                        ketersediaan material dan peralatan
                         usaha Anda.</p>
                 </div>
 
@@ -140,8 +148,9 @@
                     <div class="icon-box">
                         <i class="fa-solid fa-network-wired"></i>
                     </div>
-                    <h3>Distribusi & Logistik</h3>
-                    <p>Jaringan distribusi luas yang menjamin pengiriman tepat waktu ke berbagai wilayah dengan aman.
+                    <h3 data-i18n="services.s3_title">Distribusi & Logistik</h3>
+                    <p data-i18n="services.s3_desc">Jaringan distribusi luas yang menjamin pengiriman tepat waktu ke
+                        berbagai wilayah dengan aman.
                     </p>
                 </div>
             </div>
@@ -154,15 +163,15 @@
         <div class="container stats-container">
             <div class="stat-item">
                 <h2 class="counter" data-target="20">0</h2>
-                <p>Tahun Pengalaman</p>
+                <p data-i18n="stats.years">Tahun Pengalaman</p>
             </div>
             <div class="stat-item">
                 <h2 class="counter" data-target="150">0</h2>
-                <p>Mitra Bisnis</p>
+                <p data-i18n="stats.partners">Mitra Bisnis</p>
             </div>
             <div class="stat-item">
                 <h2 class="counter" data-target="100">0</h2>
-                <p>Persen Kepuasan</p>
+                <p data-i18n="stats.satisfaction">Persen Kepuasan</p>
             </div>
         </div>
     </section>
@@ -172,31 +181,32 @@
         <div class="container">
             <div class="row">
                 <div class="col-text reveal-left">
-                    <h4 class="section-subtitle">Keunggulan Kami</h4>
-                    <h2 class="section-title">Mengapa Memilih PT Banyumas Arga Resty?</h2>
-                    <p>Kami memahami bahwa kepercayaan adalah modal utama dalam bisnis. Berikut adalah alasan mengapa
+                    <h4 class="section-subtitle" data-i18n="adv.subtitle">Keunggulan Kami</h4>
+                    <h2 class="section-title" data-i18n="adv.title">Mengapa Memilih PT Banyumas Arga Resty?</h2>
+                    <p data-i18n="adv.desc">Kami memahami bahwa kepercayaan adalah modal utama dalam bisnis. Berikut
+                        adalah alasan mengapa
                         kami adalah mitra yang tepat untuk Anda:</p>
 
                     <ul class="advantage-list">
                         <li>
                             <i class="fa-solid fa-circle-check"></i>
                             <div>
-                                <h5>Legalitas Terjamin</h5>
-                                <p>Perusahaan resmi berbadan hukum Perseroan Terbatas (PT).</p>
+                                <h5 data-i18n="adv.a1_title">Legalitas Terjamin</h5>
+                                <p data-i18n="adv.a1_desc">Perusahaan resmi berbadan hukum Perseroan Terbatas (PT).</p>
                             </div>
                         </li>
                         <li>
                             <i class="fa-solid fa-globe"></i>
                             <div>
-                                <h5>Jaringan Luas</h5>
-                                <p>Koneksi bisnis yang kuat di berbagai sektor industri.</p>
+                                <h5 data-i18n="adv.a2_title">Jaringan Luas</h5>
+                                <p data-i18n="adv.a2_desc">Koneksi bisnis yang kuat di berbagai sektor industri.</p>
                             </div>
                         </li>
                         <li>
                             <i class="fa-solid fa-users"></i>
                             <div>
-                                <h5>Tim Berpengalaman</h5>
-                                <p>Didukung oleh tenaga ahli yang kompeten di bidangnya.</p>
+                                <h5 data-i18n="adv.a3_title">Tim Berpengalaman</h5>
+                                <p data-i18n="adv.a3_desc">Didukung oleh tenaga ahli yang kompeten di bidangnya.</p>
                             </div>
                         </li>
                     </ul>
@@ -212,9 +222,10 @@
     <!-- Call to Action -->
     <section class="cta-section">
         <div class="container text-center">
-            <h2>Siap Mengembangkan Bisnis Bersama Kami?</h2>
-            <p>Hubungi kami hari ini untuk mendiskusikan kebutuhan pengadaan dan distribusi perusahaan Anda.</p>
-            <a href="#contact" class="btn btn-gold">Hubungi Kami</a>
+            <h2 data-i18n="cta.title">Siap Mengembangkan Bisnis Bersama Kami?</h2>
+            <p data-i18n="cta.desc">Hubungi kami hari ini untuk mendiskusikan kebutuhan pengadaan dan distribusi
+                perusahaan Anda.</p>
+            <a href="#contact" class="btn btn-gold" data-i18n="cta.btn">Hubungi Kami</a>
         </div>
     </section>
 
@@ -231,14 +242,15 @@
                     <div class="contact-item">
                         <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
                         <div>
-                            <h4>Alamat Kantor</h4>
-                            <p>Jl. Contoh Raya No. 123, Banyumas,<br>Jawa Tengah, Indonesia</p>
+                            <h4 data-i18n="contact.address_title">Alamat Kantor</h4>
+                            <p data-i18n="contact.address_val">Jl. Contoh Raya No. 123, Banyumas,<br>Jawa Tengah,
+                                Indonesia</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="icon"><i class="fa-solid fa-envelope"></i></div>
                         <div>
-                            <h4>Email</h4>
+                            <h4 data-i18n="contact.email_title">Email</h4>
                             <p>info@banyumasargaresty.co.id</p>
                             <p>support@banyumasargaresty.co.id</p>
                         </div>
@@ -246,7 +258,7 @@
                     <div class="contact-item">
                         <div class="icon"><i class="fa-solid fa-phone"></i></div>
                         <div>
-                            <h4>Telepon</h4>
+                            <h4 data-i18n="contact.phone_title">Telepon</h4>
                             <p>+62 123 4567 890</p>
                             <p>021-555-555</p>
                         </div>
@@ -255,18 +267,26 @@
 
                 <form class="contact-form reveal-up delay-1">
                     <div class="form-group">
-                        <input type="text" placeholder="Nama Lengkap" required>
+                        <input type="text" placeholder="Nama Lengkap" data-i18n-placeholder="contact.ph_name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Email Perusahaan" required>
+                        <input type="email" placeholder="Email Perusahaan" data-i18n-placeholder="contact.ph_email"
+                            required>
                     </div>
                     <div class="form-group">
-                        <input type="text" placeholder="Subjek" required>
+                        <select id="subject-select" required>
+                            <option value="" disabled selected data-i18n="contact.ph_subject">Subjek</option>
+                            <option value="general" data-i18n="contact.opt_general">Pertanyaan Umum</option>
+                            <option value="quotation" data-i18n="contact.opt_quote">Permintaan Penawaran</option>
+                            <option value="partnership" data-i18n="contact.opt_partner">Menjalin Kerja Sama</option>
+                        </select>
                     </div>
                     <div class="form-group">
-                        <textarea rows="5" placeholder="Pesan Anda" required></textarea>
+                        <textarea rows="5" placeholder="Pesan Anda" data-i18n-placeholder="contact.ph_msg"
+                            required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary full-width">Kirim Pesan</button>
+                    <button type="submit" class="btn btn-primary full-width" data-i18n="contact.btn_submit">Kirim
+                        Pesan</button>
                 </form>
             </div>
         </div>
@@ -277,7 +297,8 @@
         <div class="container footer-container">
             <div class="footer-col">
                 <h3>PT Banyumas Arga Resty</h3>
-                <p>Mitra terpercaya dalam solusi perdagangan umum dan jasa. Berpengalaman, profesional, dan berdedikasi
+                <p data-i18n="footer.desc">Mitra terpercaya dalam solusi perdagangan umum dan jasa. Berpengalaman,
+                    profesional, dan berdedikasi
                     untuk kesuksesan bersama.</p>
                 <div class="social-links">
                     <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -286,21 +307,21 @@
                 </div>
             </div>
             <div class="footer-col">
-                <h3>Tautan Cepat</h3>
+                <h3 data-i18n="footer.links_title">Tautan Cepat</h3>
                 <ul>
-                    <li><a href="#home">Beranda</a></li>
-                    <li><a href="#about">Tentang Kami</a></li>
-                    <li><a href="#services">Layanan</a></li>
-                    <li><a href="#contact">Hubungi Kami</a></li>
+                    <li><a href="#home" data-i18n="nav.home">Beranda</a></li>
+                    <li><a href="#about" data-i18n="nav.about">Tentang Kami</a></li>
+                    <li><a href="#services" data-i18n="nav.services">Layanan</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Hubungi Kami</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h3>Layanan</h3>
+                <h3 data-i18n="nav.services">Layanan</h3>
                 <ul>
-                    <li><a href="#">Perdagangan Umum</a></li>
-                    <li><a href="#">Jasa Pengadaan</a></li>
-                    <li><a href="#">Distribusi</a></li>
-                    <li><a href="#">Konsultasi Bisnis</a></li>
+                    <li><a href="#" data-i18n="services.s1_title">Perdagangan Umum</a></li>
+                    <li><a href="#" data-i18n="services.s2_title">Jasa Pengadaan</a></li>
+                    <li><a href="#" data-i18n="services.s3_short">Distribusi</a></li>
+                    <li><a href="#" data-i18n="footer.consult">Konsultasi Bisnis</a></li>
                 </ul>
             </div>
         </div>
@@ -310,7 +331,8 @@
     </footer>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/628977337977" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
+    <a href="https://wa.me/628977337977?text=assallamualiakum%0Anama%20saya%20%3A%0Asaya%20ingin%20mengajukan%20kerja%20sama.%20apakah%20saya%20bisa%20mencari%20info%20lebih%20lanjut.%3F"
+        class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
